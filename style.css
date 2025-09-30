@@ -1,0 +1,137 @@
+body { 
+    font-family: sans-serif; 
+    margin: 20px; 
+    background-color: #f4f7f6; 
+}
+
+.container { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#my-id { 
+    font-weight: bold; 
+    color: #007bff; 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* GRUPPEN- & INPUT-ELEMENTE */
+.input-group input, .input-send-group input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Wichtig für korrekte Breitenberechnung */
+}
+
+#group-name-input, #member-id-input {
+    width: 48%; /* Platz für zwei nebeneinander */
+}
+
+#group-name-input { margin-right: 4%; } 
+
+.button-group button {
+    margin-right: 10px;
+}
+
+#message-input { 
+    width: 70%; 
+    margin-right: 10px;
+}
+.input-send-group {
+    display: flex;
+    align-items: center;
+}
+
+
+/* BUTTONS */
+button { 
+    padding: 10px 15px;
+    cursor: pointer; 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 4px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #1e7e34;
+}
+
+button:disabled {
+    background-color: #90a4ae;
+    cursor: not-allowed;
+}
+
+
+/* CHAT FENSTER */
+#chat-window { 
+    height: 300px; 
+    border: 1px solid #ddd; 
+    overflow-y: scroll; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    background-color: #e9ecef; 
+    border-radius: 4px; 
+}
+
+.message { 
+    margin-bottom: 8px; 
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    max-width: 80%; 
+}
+
+.me { 
+    background-color: #007bff; 
+    color: white; 
+    margin-left: auto; 
+    text-align: right; 
+}
+
+.partner { 
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+.system { 
+    font-style: italic; 
+    color: #777; 
+    text-align: center; 
+    margin-bottom: 15px; 
+}
+
+/* MITGLIEDERLISTE */
+#group-name-display { 
+    cursor: pointer; 
+    text-decoration: underline; 
+    color: #1e7e34; 
+}
+
+#member-list { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-top: 10px; 
+    display: none; 
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.member-item { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 5px; 
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
