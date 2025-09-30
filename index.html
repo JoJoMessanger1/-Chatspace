@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>P2P Gruppen Messenger (mit LocalStorage)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>P2P Gruppen Messenger</h1>
+        <p>Deine Benutzer-ID: <strong id="my-id">Wird geladen...</strong></p>
+
+        <hr>
+        <h2>Gruppe festlegen & Mitglieder speichern</h2>
+        <div class="input-group">
+            <input type="text" id="group-name-input" placeholder="Gruppenname festlegen">
+            <input type="text" id="member-id-input" placeholder="Mitglieder-ID hinzufügen">
+        </div>
+        <div class="button-group">
+            <button id="add-member-btn">Mitglied speichern</button>
+            <button id="start-group-btn">Gruppe starten</button>
+        </div>
+
+        <hr>
+
+        <h2>Chat: <span id="group-name-display">Wähle Gruppe</span></h2>
+        
+        <div id="member-list">
+            <strong>Mitglieder:</strong>
+        </div>
+
+        <div id="chat-window"></div>
+
+        <div class="input-send-group">
+            <input type="text" id="message-input" placeholder="Nachricht eingeben..." disabled>
+            <button id="send-btn" disabled>Senden</button>
+        </div>
+    </div>
+
+    <script src="p2p_group_messenger.js"></script>
+</body>
+</html>
